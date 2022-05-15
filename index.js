@@ -10,5 +10,8 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   res.render('index', {haikus: haikus});
 });
+app.get('/about', (req, res) => {
+  res.render('about', {haikus: haikus});
+});
 
 app.listen(port);
